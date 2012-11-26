@@ -1,7 +1,7 @@
 Primes
 ======
 
-A simple python script using sqlite3 to calculate prime numbers and store them into a database.
+A simple python script to calculate prime numbers and store them into a database using sqlite3.
 
 You can calculate the prime numbers to the number you want (10000 for example) and store them into a database.
 Later, you can easily compute primes to another larger number without needing to find again all the primes you already have computed before.
