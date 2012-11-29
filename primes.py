@@ -154,17 +154,7 @@ def printPrimesFromTo(a,b):
     if(b<2):
         print("b must be at least 2.")
     else:
-        for i in range(0,len(primes)):
-            if(a>primes[i]):
-                a = primes[i]
-                break
-        for i in range(0,len(primes)):
-            if(b<primes[i]):
-                b = primes[i-1]
-                break
-
-
-    c.execute("""SELECT prime FROM primes WHERE prime BETWEEN """ +str(a)+""" AND """+str(b))
+        c.execute("""SELECT prime FROM primes WHERE prime BETWEEN """ +str(a)+""" AND """+str(b))
     for line in c.fetchall():
         print(line[0])
     print("Done reading primes in the interval from database.")
@@ -190,7 +180,7 @@ if __name__ == "__main__":
     storePrimeNumbersTo(10000) # choose any number you want the script to calculate to. The numbers are stored in list 'primes'.
     saveNumbers() # required to save in the database the primes computed.
     #printAllPrimes() # show which numbers are registered in the database.
-    printPrimesFromTo(2,97) # show the interval of primes you want from the database.
+    printPrimesFromTo(30,50) # show the interval of primes you want from the database.
     exportToFile() # you can export with this the content of your database to a textfile.
 
     conn.close()
