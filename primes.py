@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # Name:        Primes
-# Purpose:     Compute prime mubers and store them in a database.
+# Purpose:     Compute prime numbers and store them in a database.
 #
 # Author:      Flagoul
 #
